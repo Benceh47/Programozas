@@ -36,11 +36,51 @@ print(a,b,c)
 nev = input("adja meg a keresztnevét: ")
 hossz = len(nev)
 if hossz >= 3:
-    szorzat = ord(nev[0]) * ord(nev[1]) * ord(nev[2])
+    kod1 = ord(nev[0])
+    kod2 = ord(nev[1])
+    kod3 = ord(nev[2])
+    jelszo = kod1 * kod2 * kod3     
 elif hossz == 2:
-    szorzat = ord(nev[0]) * ord(nev[1]) * hossz
-elif hossz == 1:
-    szorzat = ord(nev[0]) * hossz * hossz * hossz
+    kod1 = ord(nev[0])
+    kod2 = ord(nev[1])
+    jelszo = kod1 * kod2 * hossz
 else:
-    szorzat = 0
-print("a jelszava: " + str(szorzat))
+    kod1 = ord(nev[0])
+    jelszo = kod1 * (hossz ** 3)
+print("a jelszava:", jelszo)
+
+#kérjén be egy felhasználottol egy számot majd irja ki a szám 13szorosát
+szam= int(input("adjon meg egy számot: "))
+szam13 = szam * 13
+print("a szám 13szorosa:", szam13)
+#kérjen be egy szöveget és egy számot majd irja ki a szöveget annyiszor
+
+
+
+
+#genráljon ki egy véletlen kisbetűs karaktert
+karakter = chr(random.randint(97, 122))
+print(karakter)
+szoveg = input("adjon meg egy szöveget: ")
+szam = int(input("adjon meg egy számot: "))
+for i in range(szam):
+    print(szoveg)
+#kérjen be egy szöveget és irja ki a szöveg közepén lévő karaktert
+szoveg = input("adjon meg egy szöveget: ")
+hossz = len(szoveg)
+kozep = hossz // 2
+print("a szöveg középső karaktere:", szoveg[kozep])
+#ha páros a hossz akkor a két középső karaktert
+if hossz % 2 == 0:
+    print("a szöveg középső karakterei:", szoveg[kozep - 1], szoveg[kozep])
+#ha páratlan akkor az egy középső karaktert
+else:
+    print("a szöveg középső karaktere:", szoveg[kozep])
+#kérjen be egy szöveget és irja ki a szöveg fordítottját
+szoveg = input("adjon meg egy szöveget: ")
+forditott = ""
+for i in range(len(szoveg) - 1, -1, -1):
+    forditott += szoveg[i]
+print("a szöveg fordítva:", forditott)
+            
+  
