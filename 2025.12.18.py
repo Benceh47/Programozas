@@ -38,3 +38,13 @@ if(utolso_szamjegy % 2 ==0):
     print("páros")
 else:
     print("páratlan")
+
+
+    #db-nyi almát szeretnék látni
+for kiskutya in range(2,db,3):
+    print(kiskutya+1,"Alma")
+szoveg= "kalapács"
+print(szoveg)
+for karakter in szoveg:
+    print(karakter)
+
