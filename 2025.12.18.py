@@ -43,8 +43,12 @@ else:
     #db-nyi almát szeretnék látni
 for kiskutya in range(2,db,3):
     print(kiskutya+1,"Alma")
+
+
 szoveg= "kalapács"
 print(szoveg)
+index = 0
 for karakter in szoveg:
-    print(karakter)
+    index+=1
+    print(index,karakter)
 
