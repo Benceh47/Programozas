@@ -92,4 +92,4 @@ def tamaslista(db):
     for i in range(0,db,1):
         lista.append(random.randint(-10,50))
     return(lista)
-print(tamaslista(167))
+print(tamaslista(19))
