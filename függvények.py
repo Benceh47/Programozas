@@ -93,3 +93,5 @@ def tamaslista(db):
         lista.append(random.randint(-10,50))
     return(lista)
 print(tamaslista(19))
+
+def terjedelem()
