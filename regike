@@ -1,0 +1,7 @@
+import random
+
+szam = random.randint(1,10)
+if szam< 10:
+    print("regike leszbikus")
+else:
+    print("regike nem leszbikus")

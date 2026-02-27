@@ -16,7 +16,7 @@ def eredmeny(jegy, honapok):
             max_index = i
     return honapok[max_index]
 
-def main():
+def main(): 
     honapok = ["Január","február","március","április","május","junius","julius","augusztus","szeptember","oktober","november","december"]
     jani = [4.0, 3.8, 4.2, 4.1, 3.8, 4.2, 3.0, 3.6, 4.2, 4.1, 4.7, 4.2]
     print(eredmeny(jani, honapok))
